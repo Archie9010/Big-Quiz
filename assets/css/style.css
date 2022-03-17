@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, #3333ff 0%, #00ff99 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
