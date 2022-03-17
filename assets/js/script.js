@@ -80,7 +80,12 @@ function nextQuestion(){
     }
 }
 
-//click events to next button
+//click events to next question button
 next.addEventListener('click',nextQuestion);
+
+//Back to Quiz button event
+function backToQuiz(){
+    location.reload();
+}
 displayQuestion()
 
