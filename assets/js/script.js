@@ -58,12 +58,29 @@ function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
+        document.getElementById(e.id).style.background= 'green';
     }
     else{
-        document.getElementById(e.id).style.background= 'tomato';
+        document.getElementById(e.id).style.background= 'red';
     }
     setTimeout(nextQuestion,300);
 }
+
+//function to display next question 
+function nextQuestion(){
+    if(i<questionBank.length-1)
+    {
+        i=i+1;
+        displayQuestion();
+    }
+    else{
+        points.innerHTML= score+ '/'+questionBank.length;
+        quizContainer.style.display= 'none';
+        scorecard.style.display= 'block'
+    }
+}
+
+//click events to next button
+next.addEventListener('click',nextQuestion);
 displayQuestion()
 
