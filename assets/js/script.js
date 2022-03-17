@@ -18,7 +18,7 @@ var questionBank= [
     {
         question : 'What is the nearest planet to the sun?',
         option : ['Mercury','Earth','Pluto','Mars'],
-        answer : ''
+        answer : 'Mercury'
     },
     {
         question : 'How many teeth does an adult human have?',
@@ -53,4 +53,17 @@ function displayQuestion(){
     stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
 }
 
+//function to calculate scores
+function calcScore(e){
+    if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
+    {
+        score= score+1;
+        document.getElementById(e.id).style.background= 'limegreen';
+    }
+    else{
+        document.getElementById(e.id).style.background= 'tomato';
+    }
+    setTimeout(nextQuestion,300);
+}
+displayQuestion()
 
