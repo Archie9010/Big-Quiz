@@ -21,25 +21,35 @@ var questionBank= [
         answer : 'Mercury'
     },
     {
-        question : 'How many teeth does an adult human have?',
-        option : ['34','31','33','32'],
-        answer : '32'
+        question : 'Iceland diverted roads to avoid disturbing communities of what?',
+        option : ['Dwarfs','Goblins','Elves','Fairys'],
+        answer : 'Elves'
     },
     {
-        question : 'How many teeth does an adult human have?',
-        option : ['34','31','33','32'],
-        answer : '32'
+        question : 'How long is New Zealand’s Ninety Mile Beach?',
+        option : ['95','75','65','55'],
+        answer : '55'
     },
     {
-        question : 'How many teeth does an adult human have?',
-        option : ['34','31','33','32'],
-        answer : '32'
+        question : 'In the state of Georgia, it’s illegal to eat what with a fork?',
+        option : ['Fish','Fried Chicken','Turkey','Pork'],
+        answer : 'Fried Chicken'
     },
     {
-        question : 'How many teeth does an adult human have?',
-        option : ['34','31','33','32'],
-        answer : '32'
-    }
+        question : 'What is the loudest animal on Earth?',
+        option : ['Elephant','Sperm Whale','Hippo','Rooster'],
+        answer : 'Sperm Whale'
+    },
+    {
+        question : 'How many legs does a spider have?',
+        option : ['4','6','8','10'],
+        answer : '8'
+    },
+    {
+        question : 'How long do elephant pregnancies last?',
+        option : ['18 Months','20 Months','22 Months','24 Months'],
+        answer : '22 Months'
+    },
 ]
 
 var question= document.getElementById('question');
