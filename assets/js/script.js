@@ -24,6 +24,21 @@ var questionBank= [
         question : 'How many teeth does an adult human have?',
         option : ['34','31','33','32'],
         answer : '32'
+    },
+    {
+        question : 'How many teeth does an adult human have?',
+        option : ['34','31','33','32'],
+        answer : '32'
+    },
+    {
+        question : 'How many teeth does an adult human have?',
+        option : ['34','31','33','32'],
+        answer : '32'
+    },
+    {
+        question : 'How many teeth does an adult human have?',
+        option : ['34','31','33','32'],
+        answer : '32'
     }
 ]
 
@@ -58,15 +73,15 @@ function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'green';
+        document.getElementById(e.id).style.background= 'limegreen';
     }
     else{
-        document.getElementById(e.id).style.background= 'red';
+        document.getElementById(e.id).style.background= 'tomato';
     }
     setTimeout(nextQuestion,300);
 }
 
-//function to display next question 
+//function to display next question
 function nextQuestion(){
     if(i<questionBank.length-1)
     {
@@ -74,9 +89,9 @@ function nextQuestion(){
         displayQuestion();
     }
     else{
-        points.innerHTML= score+ '/'+questionBank.length;
+        points.innerHTML= score+ '/'+ questionBank.length;
         quizContainer.style.display= 'none';
-        scorecard.style.display= 'block'
+        scoreboard.style.display= 'block'
     }
 }
 
